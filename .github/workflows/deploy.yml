@@ -19,7 +19,6 @@ jobs:
         script: |
           cd ~/app
           git pull origin main
-          # --- YENİ EKLENEN SATIR ---
           docker compose down
-          # --------------------------
+          docker rm -f my-site || true
           docker compose up -d --build
