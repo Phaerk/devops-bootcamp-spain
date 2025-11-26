@@ -51,8 +51,6 @@ graph LR
 3.  **Deployment:**
     The CI/CD pipeline handles the rest automatically on push\!
 
-<!-- end list -->
 
-```
 
 
