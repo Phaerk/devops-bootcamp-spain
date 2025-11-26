@@ -13,7 +13,7 @@ graph LR
         VM -->|Pull| Docker[Docker Container]
         Terraform -->|Provision| VM
     end
-🛠️ Technologies Used
+Technologies Used
 Category	Tool	Usage
 Cloud Provider		Virtual Machines (B1s), Networking, NSG
 IaC		Infrastructure Provisioning
@@ -23,7 +23,7 @@ Scripting		Server Configuration Scripts
 
 E-Tablolar'a aktar
 
-⚙️ Key Features
+Key Features
 Infrastructure as Code: All Azure resources (Resource Groups, VM) are provisioned using Terraform.
 
 Dockerized Application: The web server (Nginx) and services are containerized using Docker & Docker Compose.
@@ -32,7 +32,7 @@ Zero-Touch Deployment: A GitHub Actions pipeline automatically detects changes i
 
 Security: SSH Keys are managed via GitHub Secrets; no hardcoded credentials.
 
-🚀 How to Run
+How to Run
 Clone the repo:
 
 Bash
