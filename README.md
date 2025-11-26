@@ -13,6 +13,9 @@ graph LR
         VM -->|Pull| Docker[Docker Container]
         Terraform -->|Provision| VM
     end
+
+
+
 Technologies Used
 Category	Tool	Usage
 Cloud Provider		Virtual Machines (B1s), Networking, NSG
