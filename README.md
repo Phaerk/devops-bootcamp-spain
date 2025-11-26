@@ -1,8 +1,13 @@
-#  Azure DevOps: Automated CI/CD Pipeline
+Harika, en doğrusu bu. Kodlarda hiçbir bozulma olmaması için senin **Phaerk** kullanıcı adına ve **devops-bootcamp-spain** repona özel, kopyala-yapıştır yapabileceğin en temiz hali hazırladım.
+
+Aşağıdaki kod bloğunu **sağ üst köşesindeki "Copy" butonuna basarak kopyala**, GitHub'daki `README.md` dosyasının içine gir, **her şeyi sil** ve bunu yapıştır.
+
+````markdown
+# 🚀 Azure DevOps: Automated CI/CD Pipeline
 
 This project demonstrates a complete **DevOps lifecycle** implementation using modern Infrastructure as Code (IaC) and automation tools. It deploys a containerized web application to an Azure Virtual Machine automatically upon code changes.
 
-##  Architecture
+## 🏗️ Architecture
 
 ```mermaid
 graph LR
@@ -13,37 +18,55 @@ graph LR
         VM -->|Pull| Docker[Docker Container]
         Terraform -->|Provision| VM
     end
+````
 
+## 🛠️ Technologies Used
 
+| Category | Tool | Usage |
+|----------|------|-------|
+| **Cloud Provider** |  | Virtual Machines (B1s), Networking, NSG |
+| **IaC** |  | Infrastructure Provisioning |
+| **Containerization** |  | Application Containerization & Compose |
+| **CI/CD** |  | Automated Deployment Pipeline |
+| **Scripting** |  | Server Configuration Scripts |
 
-Technologies Used
-Category	Tool	Usage
-Cloud Provider		Virtual Machines (B1s), Networking, NSG
-IaC		Infrastructure Provisioning
-Containerization		Application Containerization & Compose
-CI/CD		Automated Deployment Pipeline
-Scripting		Server Configuration Scripts
+## ⚙️ Key Features
 
-E-Tablolar'a aktar
+  * **Infrastructure as Code:** All Azure resources (Resource Groups, VM) are provisioned using Terraform.
+  * **Dockerized Application:** The web server (Nginx) and services are containerized using Docker & Docker Compose.
+  * **Zero-Touch Deployment:** A GitHub Actions pipeline automatically detects changes in the `main` branch, connects to the Azure server via SSH, and updates the containers with zero downtime strategies.
+  * **Security:** SSH Keys are managed via GitHub Secrets; no hardcoded credentials.
 
-Key Features
-Infrastructure as Code: All Azure resources (Resource Groups, VM) are provisioned using Terraform.
+## 🚀 How to Run
 
-Dockerized Application: The web server (Nginx) and services are containerized using Docker & Docker Compose.
+1.  **Clone the repo:**
 
-Zero-Touch Deployment: A GitHub Actions pipeline automatically detects changes in the main branch, connects to the Azure server via SSH, and updates the containers with zero downtime strategies.
+    ```bash
+    git clone [https://github.com/Phaerk/devops-bootcamp-spain.git](https://github.com/Phaerk/devops-bootcamp-spain.git)
+    ```
 
-Security: SSH Keys are managed via GitHub Secrets; no hardcoded credentials.
+2.  **Infrastructure Setup (Terraform):**
+    *(Make sure you have Azure CLI and Terraform installed)*
 
-How to Run
-Clone the repo:
+    ```bash
+    cd terraform-lab
+    terraform init && terraform apply
+    ```
 
-Bash
+3.  **Deployment:**
+    The CI/CD pipeline handles the rest automatically on push\!
 
-git clone [https://github.com/Phaerk/devops-bootcamp-spain.git](https://github.com/Phaerk/devops-bootcamp-spain.git)
-Infrastructure Setup (Terraform): (Make sure you have Azure CLI and Terraform installed)
+<!-- end list -->
 
-Bash
+```
 
-cd terraform-lab
-terraform init && terraform apply
+### 📝 Nasıl Yapacaksın?
+
+1.  GitHub'da **devops-bootcamp-spain** repona git.
+2.  `README.md` dosyasının sağındaki **Kalem (Edit)** ikonuna tıkla.
+3.  İçeride ne varsa hepsini sil (boş olsun).
+4.  Yukarıdaki kodu yapıştır.
+5.  Sayfanın en altına in ve yeşil **Commit changes** butonuna bas.
+
+Şimdi profilin harika görünecek! 🚀
+```
