@@ -13,16 +13,17 @@ graph LR
         VM -->|Pull| Docker[Docker Container]
         Terraform -->|Provision| VM
     end
+🛠️ Technologies Used
+Category	Tool	Usage
+Cloud Provider		Virtual Machines (B1s), Networking, NSG
+IaC		Infrastructure Provisioning
+Containerization		Application Containerization & Compose
+CI/CD		Automated Deployment Pipeline
+Scripting		Server Configuration Scripts
 
+E-Tablolar'a aktar
 
-Category,Tool,Usage
-Cloud Provider,,"Virtual Machines (B1s), Networking, NSG"
-IaC,,Infrastructure Provisioning
-Containerization,,Application Containerization & Compose
-CI/CD,,Automated Deployment Pipeline
-Scripting,,Server Configuration Scripts
-
-Key Features
+⚙️ Key Features
 Infrastructure as Code: All Azure resources (Resource Groups, VM) are provisioned using Terraform.
 
 Dockerized Application: The web server (Nginx) and services are containerized using Docker & Docker Compose.
@@ -36,10 +37,10 @@ Clone the repo:
 
 Bash
 
-git clone [https://[(https://github.com/Phaerk/devops-bootcamp-spain)](https://github.com/KULLANICI_ADIN/REPO_ADI.git)
-Infrastructure Setup (Terraform):
+git clone [https://github.com/Phaerk/devops-bootcamp-spain.git](https://github.com/Phaerk/devops-bootcamp-spain.git)
+Infrastructure Setup (Terraform): (Make sure you have Azure CLI and Terraform installed)
 
 Bash
 
-cd terraform
+cd terraform-lab
 terraform init && terraform apply
